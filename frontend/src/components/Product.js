@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Link } from 'react-router-dom'
 import Rating from './Rating'
-import {  Card } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 
 const Product = ({ product }) => {
 
