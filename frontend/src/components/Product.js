@@ -1,5 +1,4 @@
 import React from 'react'
-import { BrowserRouter as Link } from 'react-router-dom'
 import Rating from './Rating'
 import { Card } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
