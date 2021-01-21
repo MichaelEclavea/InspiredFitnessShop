@@ -11,6 +11,7 @@ import RegisterScreen from './screens/RegisterScreen'
 import ProfileScreen from './screens/ProfileScreen'
 import ShippingScreen from './screens/ShippingScreen'
 import PlaceOrderScreen from './screens/PlaceOrderScreen'
+import OrderScreen from './screens/OrderScreen'
 import { Container } from 'react-bootstrap'
 
 
@@ -26,6 +27,7 @@ function App() {
     <Route path='/payment' component={PaymentScreen}/>
     <Route path='/register' component={RegisterScreen}/>
     <Route path='/placeorder' component={PlaceOrderScreen}/>
+    <Route path='/order/:id' component={OrderScreen}/>
     <Route path='/profile' component={ProfileScreen}/>
     <Route path='/product/:id' component={ProductScreen}/>
     <Route path='/shipping' component={ShippingScreen}/>
