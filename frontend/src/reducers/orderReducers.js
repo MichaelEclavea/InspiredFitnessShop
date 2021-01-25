@@ -1,4 +1,15 @@
-import { ORDER_CREATE_FAIL, ORDER_CREATE_REQUEST, ORDER_CREATE_SUCCESS, ORDER_DETAILS_REQUEST, ORDER_DETAILS_FAIL, ORDER_DETAILS_SUCCESS, ORDER_PAY_RESET, ORDER_PAY_FAIL, ORDER_PAY_SUCCESS, ORDER_PAY_REQUEST } from '../constants/orderConstants'
+import { 
+    ORDER_CREATE_FAIL, 
+    ORDER_CREATE_REQUEST, 
+    ORDER_CREATE_SUCCESS, 
+    ORDER_DETAILS_REQUEST, 
+    ORDER_DETAILS_FAIL, 
+    ORDER_DETAILS_SUCCESS, 
+    ORDER_PAY_RESET, 
+    ORDER_PAY_FAIL, 
+    ORDER_PAY_SUCCESS, 
+    ORDER_PAY_REQUEST 
+} from '../constants/orderConstants'
 
 
 export const orderCreateReducers = (state = {}, action) => {
@@ -44,7 +55,7 @@ export const orderDetailsReducers = (state = { loading: true, orderItems: [], sh
     }
 }
 
-export const orderPayReducer = (state = { }, action) => {
+export const orderPayReducer = (state = {}, action) => {
     switch(action.type) {
         case ORDER_PAY_REQUEST:
             return {
