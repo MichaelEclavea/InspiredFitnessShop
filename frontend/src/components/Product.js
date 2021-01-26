@@ -8,8 +8,8 @@ const Product = ({ product }) => {
   return (
     <>
         <Card lg={12} md={6} sm={4} style={styles.card}>
-        <LinkContainer to={`/product/${product._id}`} style={{ cursor: 'pointer'}}>
-            <Card.Img src={product.image} variant='top' style={{ padding: '10px'}}/>
+        <LinkContainer to={`/product/${product._id}`} style={{ cursor: 'pointer', padding: '20px'}}>
+            <Card.Img src={product.image} variant='top' />
         </LinkContainer>
 
         <Card.Body>

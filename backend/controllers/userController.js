@@ -67,6 +67,13 @@ const getUserProfile = asyncHandler(async (req, res) => {
     }
 })
 
+//---------------- GET ALL USERS / API/USERS/ PRIVATE ------------ //
+const getUsers = asyncHandler(async (req, res) => {
+    const users = await User.find({})
+    res.json(users)
+
+})
+
 //---------------- PUT / UPDATE USER PROFILE  ------------ //
 const updateUserProfile = asyncHandler(async (req, res) => {
     const user = await User.findById(req.user._id)
@@ -92,4 +99,4 @@ const updateUserProfile = asyncHandler(async (req, res) => {
 })
 
 
-export { authUser, getUserProfile, registerUser, updateUserProfile }
+export { authUser, getUserProfile, registerUser, updateUserProfile, getUsers }
