@@ -13,8 +13,8 @@ const Header = () => {
   }
 
   return (
-    <header>
-      <Navbar bg="dark" variant="dark" expand="lg" collapseOnSelect>
+    <header style={{backgroundColor: 'white'}}>
+      <Navbar style={{backgroundColor: 'rgb(26, 29, 32)'}} variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>ProShop</Navbar.Brand>
