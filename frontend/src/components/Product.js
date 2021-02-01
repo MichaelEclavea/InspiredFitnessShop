@@ -13,7 +13,7 @@ const Product = ({ product }) => {
         </LinkContainer>
 
         <Card.Body>
-        <LinkContainer to={`/product/${product._id}`} style={{ cursor: 'pointer'}}>
+        <LinkContainer to={`/product/${product._id}`} style={{ cursor: 'pointer'}} id='product-name-link'>
             <Card.Title as='div'>
               <strong>{product.name}</strong>
             </Card.Title>
@@ -32,6 +32,8 @@ const Product = ({ product }) => {
 const styles={
   card: {
     margin: '1vh 0',
+    borderRadius: '10px',
+    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
   }
 }
 
