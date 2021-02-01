@@ -31,3 +31,46 @@ h2{
 #product-name-link:hover {
  font-weight: 800;
 }
+
+
+/* CAROUSEL */
+
+/* #carousel {
+  height: 500px;
+} */
+
+.carousel-item-next,
+.carousel-item-prv,
+.carousel-item.active {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.carousel-caption {
+  /* position: absolute; */
+  top: 0;
+}
+
+.carousel-caption h2 {
+  position: relative;
+  display: block;
+  color: #fff;
+  /* display: block;
+  padding-bottom: 10px; */
+}
+
+.carousel img {
+  /* display: flex;
+  justify-self: center;
+  align-self: center; */
+  display: block;
+  border-radius: 50%;
+  height: 300px;
+  padding: 30px;
+  margin: 60px auto 40px auto;
+}
+
+/* .carousel .a {
+  margin: 0 auto;
+}  */
