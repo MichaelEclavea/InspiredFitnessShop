@@ -16,7 +16,7 @@ const Header = () => {
   }
 
   return (
-    <header style={{}}>
+    <header id='header'>
       <Navbar style={{backgroundColor: 'rgb(26, 29, 32)', height: '8vh'}} variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">

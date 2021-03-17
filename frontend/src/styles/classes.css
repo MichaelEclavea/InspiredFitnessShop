@@ -1,7 +1,12 @@
 #classes {
     width: 100%;
     height: 100%;
+}
 
+h3 {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: 800;
+    padding: 0;
 }
 
 .class-title {
@@ -28,8 +33,31 @@
     max-height: 250px;
     object-fit: cover;
     border: none;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.16), 0 6px 12px rgba(0, 0, 0, 0.23);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.605), 0 6px 12px rgba(0, 0, 0, 0.486);
     transition: all 0.2s ease-out;
-    transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.5s box-shadow,
-      0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+    transition: 0.5s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.5s box-shadow, 0.5s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+}
+
+#up-icon-section {
+    bottom: 0;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+#up-icon {
+    cursor: pointer;
+    opacity: 0.7;
+    font-size: 3rem;
+    width: 100%;
+    text-align: center;
+    /* animation-delay: 4s;
+    animation-duration: 3s;
+    transition: all 0.5s ease;
+    animation-name: icon-hop; */
+}
+
+i:hover {
+    transform: scale(1.2);
 }

@@ -5,6 +5,7 @@ import {Link} from 'react-scroll'
 import Classes from '../components/Classes'
 import '../styles/homescreen.css'
 
+
 const HomeScreen = () => {
   // const [isDesktop, setIsDesktop] = useState(false);
   // const [isMobile, setIsMobile] = useState(false);
