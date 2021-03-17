@@ -16,8 +16,8 @@ const Header = () => {
   }
 
   return (
-    <header style={{backgroundColor: 'white'}}>
-      <Navbar style={{backgroundColor: 'rgb(26, 29, 32)'}} variant="dark" expand="lg" collapseOnSelect>
+    <header style={{}}>
+      <Navbar style={{backgroundColor: 'rgb(26, 29, 32)', height: '8vh'}} variant="dark" expand="lg" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>Inspired Fitness</Navbar.Brand>

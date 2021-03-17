@@ -4,6 +4,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import CartScreen from './screens/CartScreen'
 import HomeScreen from './screens/HomeScreen'
+import ShopScreen from './screens/ShopScreen'
 import PaymentScreen from './screens/PaymentScreen'
 import LoginScreen from './screens/LoginScreen'
 import ProductScreen from './screens/ProductScreen'
@@ -23,15 +24,16 @@ import { Container } from 'react-bootstrap'
 
 function App() {
   return (
-    <Router>
     <div>
+    <Router>
     <Header/>
-    <main className='py-3'>
+    <main>
     <Container>
     <Route path='/' component={HomeScreen} exact/>
-    <Route path='/page/:pageNumber' component={HomeScreen} exact/>
-    <Route path='/search/:keyword/page/:pageNumber' component={HomeScreen} exact/>
-    <Route path='/search/:keyword' component={HomeScreen} exact/>
+    <Route path='/shop' component={ShopScreen} exact/>
+    <Route path='/shop/page/:pageNumber' component={ShopScreen} exact/>
+    <Route path='/search/:keyword/page/:pageNumber' component={ShopScreen} exact/>
+    <Route path='/search/:keyword' component={ShopScreen} exact/>
     <Route path='/login' component={LoginScreen}/>
     <Route path='/payment' component={PaymentScreen}/>
     <Route path='/register' component={RegisterScreen}/>
@@ -48,12 +50,11 @@ function App() {
     <Route path='/admin/productlist' component={ProductListScreen} exact />
     <Route path='/admin/productlist/:pageNumber' component={ProductListScreen} exact/>
     <Route path='/admin/orderlist' component={OrderListScreen}/>
-
     </Container>
     </main>
     <Footer/>
-    </div>
     </Router>
+    </div>
   );
 }
 

@@ -1,49 +1,52 @@
-import React, {useEffect} from 'react'
-import {Link} from 'react-router-dom'
-import {useDispatch, useSelector} from 'react-redux'
-import Meta from '../components/Meta'
-import {Row, Col} from 'react-bootstrap'
-import Product from '../components/Product'
-import ProductCarousel from '../components/ProductCarousel'
-import Paginate from '../components/Paginate'
-import Loader from '../components/Loader'
-import Message from '../components/Message'
-import {listProducts} from '../actions/productActions'
+import React, {useState} from 'react'
+import {Link as DomLink} from 'react-router-dom'
+import FadeIn from 'react-fade-in'
+import {Link} from 'react-scroll'
+import Classes from '../components/Classes'
+import '../styles/homescreen.css'
 
-const HomeScreen = ({ match }) => {
-  const keyword = match.params.keyword
-  const pageNumber = match.params.pageNumber || 1
+const HomeScreen = () => {
+  // const [isDesktop, setIsDesktop] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
 
-
-  const dispatch = useDispatch()
-  const productList = useSelector((state) => state.productList)
-  const {loading, error, products, page, pages} = productList
-
-  useEffect(() => {
-    dispatch(listProducts(keyword, pageNumber))
-  }, [dispatch, keyword, pageNumber])
+  // useEffect(() => {
+  //   if (window.innerWidth > 769) {
+  //     setIsDesktop(true);
+  //     setIsMobile(false);
+  //   } else {
+  //     setIsMobile(true);
+  //     setIsDesktop(false);
+  //   }
+  // }, []);
 
   return (
     <>
-    <Meta/>
-    {!keyword ? <ProductCarousel /> : <Link to='/' className='btn btn-light'>Go Back</Link> }
-      <h1>Products & Apparel</h1>
-      {loading ? (
-        <Loader />
-      ) : error ? (
-        <Message variant='danger'>{error}</Message>
-      ) : (
-        <>
-        <Row>
-          {products.map((product, idx) => (
-            <Col sm={12} md={6} lg={4} key={idx}>
-              <Product product={product} />
-            </Col>
-          ))}
-        </Row>
-        <Paginate pages={pages} page={page} keyword={keyword ? keyword : ''} />
-        </>
-      )}
+      <div id="welcome">
+        <img className="background-image" src="../images/girl.jpg"></img>
+        <FadeIn transitionDuration="3000" delay="2000">
+          <h1 className="main-title">Inspired Fitness & Training Center </h1>
+          <section className="btn-section">
+            <Link to="classes" smooth duration={1000}>
+              <button className="home-btn" >Classes</button>
+            </Link>
+            <DomLink to="/shop">
+              <button className="home-btn">Shop</button>
+            </DomLink>
+          </section>
+        </FadeIn>
+        <section className="down-section">
+          <FadeIn transitionDuration="2000" delay="4000">
+            <Link to="classes" smooth duration={1000}>
+              <i
+                className="fa fa-angle-down fa-2x"
+                aria-hidden="true"
+                id="down-icon"
+              ></i>
+            </Link>
+          </FadeIn>
+        </section>
+      </div>
+      <Classes />
     </>
   )
 }

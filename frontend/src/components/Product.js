@@ -9,7 +9,7 @@ const Product = ({ product }) => {
     <>
         <Card lg={12} md={6} sm={4} style={styles.card}>
         <LinkContainer to={`/product/${product._id}`} style={{ cursor: 'pointer', padding: '20px' }}>
-            <Card.Img src={product.image} variant='top' />
+            <Card.Img className='product-img' src={product.image} variant='top' />
         </LinkContainer>
         
         <Card.Body>

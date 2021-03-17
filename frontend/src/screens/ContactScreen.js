@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 import {Form, Button, Col} from 'react-bootstrap'
-import FormContainer from '../components/FormContainer.js'
+// import FormContainer from '../components/FormContainer.js'
 import {useSelector} from 'react-redux'
 
 const ContactScreen = ({history}) => {
@@ -15,7 +15,7 @@ const ContactScreen = ({history}) => {
     if(userInfo) {
       setUserName({value: userInfo.name})
       setUserEmail({value: userInfo.email})
-    } 
+    }
   }, [history, userInfo])
 
   const submitHandler = (e) => {
@@ -44,7 +44,7 @@ const ContactScreen = ({history}) => {
       <Link className="btn btn-light my-3" to="/">
         Go Back
       </Link>
-      <FormContainer>
+
         <h1 style={{textAlign: 'center'}}>Contact Us</h1>
         <Form onSubmit={submitHandler} action='contact-page' method='post'>
           <Form.Group>
@@ -67,7 +67,6 @@ const ContactScreen = ({history}) => {
             Send
           </Button>
         </Form>
-      </FormContainer>
     </>
   )
 }
