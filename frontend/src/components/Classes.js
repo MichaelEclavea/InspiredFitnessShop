@@ -40,7 +40,7 @@ const Classes = () => {
                 Dolor ut eu voluptate adipisicing mollit ut nisi nulla mollit.
                 Cillum reprehenderit dolor tempor exercitation amet sint
                 reprehenderit velit est. Occaecat laboris adipisicing ipsum
-                magna cupidatat Lorem.
+                magna cupidatat Lorem..
               </p>
             </Col>
             <Col>
