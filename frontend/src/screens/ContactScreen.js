@@ -1,5 +1,6 @@
 import React from 'react'
 // import {Link} from 'react-router-dom'
+import '../styles/contact.css'
 import { Col, Row } from 'react-bootstrap'
 // import FormContainer from '../components/FormContainer.js'
 
@@ -40,7 +41,7 @@ const ContactScreen = () => {
   // }
 
   return (
-    <div style={{ margin: 'auto', width: '50%', minHeight: '80vh', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+    <div className='contact-container'>
     <div>
        <Row>
       <Col>

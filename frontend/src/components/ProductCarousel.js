@@ -35,6 +35,8 @@ const styles = {
     img: {
         height: '300px',
         width: 'auto',
+        borderRadius: '50%',
+        boxShadow: '0 6px 12px rgba(0, 0, 0, 0.276), 0 6px 12px rgba(0, 0, 0, 0.276)',
     }
 }
 
