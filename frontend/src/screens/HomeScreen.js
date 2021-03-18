@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import {Link as DomLink} from 'react-router-dom'
 import FadeIn from 'react-fade-in'
 import {Link} from 'react-scroll'
@@ -7,23 +7,10 @@ import '../styles/homescreen.css'
 
 
 const HomeScreen = () => {
-  const [isDesktop, setIsDesktop] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth > 769) {
-      setIsDesktop(true);
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-      setIsDesktop(false);
-    }
-  }, []);
 
   return (
     <>
       <div id="welcome">
-        {/* <img className="background-image" src="../images/girl.jpg"></img> */}
         <FadeIn transitionDuration="2000" delay="1000">
           <h1 className="main-title">Inspired Fitness & Training Center </h1>
           <section className="btn-section">
