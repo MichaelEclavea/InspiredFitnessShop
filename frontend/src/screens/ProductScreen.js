@@ -74,7 +74,7 @@ const ProductScreen = ({history, match}) => {
                 overflow: 'hidden',
                 display: 'flex',
                 justifyContent: 'center',
-                alignItems: 'center',
+                alignItems: 'flex-start',
               }}
             >
               <Image src={product.image} alt={product.name} fluid />

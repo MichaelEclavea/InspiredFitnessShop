@@ -35,7 +35,7 @@ const styles={
     margin: '1vh 0',
     borderRadius: '10px',
     opacity: '0.9',
-    boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)',
+    boxShadow: '0 6px 12px rgba(0, 0, 0, 0.276), 0 6px 12px rgba(0, 0, 0, 0.276)',
     overflow: 'hidden',
   }
 }
