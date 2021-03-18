@@ -1,0 +1,16 @@
+{
+  "list": [
+    {
+      "_id": "6018f4fffbd38c350aa8a97f",
+      "image": "./images/products/microfiber.png"
+    },
+    {
+      "_id": "6018f182fbd38c350aa8a97b",
+      "image": "./images/products/ur-face-combo.png"
+    },
+    {
+      "_id": "6018f097fbd38c350aa8a97a",
+      "image": "./images/products/ur-face.png"
+    }
+  ]
+}

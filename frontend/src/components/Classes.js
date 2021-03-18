@@ -33,10 +33,10 @@ const Classes = () => {
         >
           <Row className="class-row">
             <Col>
-              <h3>Kid's Class</h3>
-              <hr></hr>
+              <h3 className='class-headers'>Kid's Class</h3>
+              <hr className='hr'></hr>
               <p>Days: Mon, Wed, Fri</p>
-              <hr></hr>
+              <hr className='hr'></hr>
               <p>
                 Dolor ut eu voluptate adipisicing mollit ut nisi nulla mollit.
                 Cillum reprehenderit dolor tempor exercitation amet sint
@@ -74,10 +74,10 @@ const Classes = () => {
         >
           <Row className="class-row">
             <Col>
-              <h3>Youth Class</h3>
-              <hr></hr>
+              <h3 className='class-headers'>Youth Class</h3>
+              <hr className='hr'></hr>
               <p>Days: Mon, Wed, Fri</p>
-              <hr></hr>
+              <hr className='hr'></hr>
               <p>
                 Dolor ut eu voluptate adipisicing mollit ut nisi nulla mollit.
                 Cillum reprehenderit dolor tempor exercitation amet sint
@@ -115,10 +115,10 @@ const Classes = () => {
         >
           <Row className="class-row">
             <Col>
-              <h3>Adult Class</h3>
-              <hr></hr>
+              <h3 className='class-headers'>Adult Class</h3>
+              <hr className='hr'></hr>
               <p>Days: Mon, Wed, Fri</p>
-              <hr></hr>
+              <hr className='hr'></hr>
               <p>
                 Dolor ut eu voluptate adipisicing mollit ut nisi nulla mollit.
                 Cillum reprehenderit dolor tempor exercitation amet sint
@@ -145,19 +145,19 @@ const Classes = () => {
             </Col>
           </Row>
         </Fade>
-      </Container>
       <section id="up-icon-section">
       <Link to="header" smooth duration={1000}>
         <Fade>
           <i
             className="fa fa-angle-up fa-2x"
             aria-hidden="true"
-            id='up-icon'
+            id="up-icon"
           ></i>
-          <p style={{textAlign: 'center', cursor: 'pointer'}}>Back to top</p>
+        <strong>Back to top</strong>
         </Fade>
       </Link>
       </section>
+      </Container>
     </div>
   )
 }

@@ -40,7 +40,7 @@ const ContactScreen = ({history}) => {
   }
 
   return (
-    <>
+    <div style={{ width: '600px', margin: 'auto'}}>
       <Link className="btn btn-light my-3" to="/">
         Go Back
       </Link>
@@ -67,7 +67,7 @@ const ContactScreen = ({history}) => {
             Send
           </Button>
         </Form>
-    </>
+    </div>
   )
 }
 

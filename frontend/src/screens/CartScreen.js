@@ -29,7 +29,7 @@ const CartScreen = ({match, location, history}) => {
   }
 
   return (
-    <Row>
+    <Row style={{paddingTop: '5vh'}}>
       <Col md={8}>
         <h1>Shopping Cart</h1>
         {cartItems.length === 0 ? (
