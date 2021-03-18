@@ -24,12 +24,12 @@ import { Container } from 'react-bootstrap'
 
 function App() {
   return (
-    <div>
+    <div id='app-container'>
     <Router>
     <Header/>
     <main>
-    <Container>
     <Route path='/' component={HomeScreen} exact/>
+    <Container>
     <Route path='/shop' component={ShopScreen} exact/>
     <Route path='/shop/page/:pageNumber' component={ShopScreen} exact/>
     <Route path='/search/:keyword/page/:pageNumber' component={ShopScreen} exact/>

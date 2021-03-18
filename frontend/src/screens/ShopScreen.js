@@ -27,7 +27,7 @@ const ShopScreen = ({ match }) => {
     <>
     <Meta/>
     {!keyword ? <ProductCarousel /> : <Link to='/shop' className='btn btn-light'>Go Back</Link> }
-      <h1>Products & Apparel</h1>
+      <h1 className='title'>Products & Apparel</h1>
       {loading ? (
         <Loader />
       ) : error ? (

@@ -2,10 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+#app-container {
+  background-image: url('./new-bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+
+
 }
 
 main {
-  min-height: 80vh;
+  min-height: 87vh;
 }
 
 .main-title {
@@ -14,20 +23,26 @@ main {
   color: white;
 }
 
-
+.title {
+  font-family: 'Philosopher', sans-serif;
+  color: white;
+}
 
 h3 {
   padding: 1rem 0;
+  color: white;
 }
 
 h1 {
   font-size: 1.8rem;
   padding: 1rem 0;
+  color: white;
 }
 
 h2 {
   font-size: 1.4rem;
   padding: 0.5rem 0;
+  color: white;
 }
 
 .rating span {
@@ -81,5 +96,5 @@ h2 {
 }
 
 #search-btn {
-  border: 2px solid rgb(24, 72, 24);
+  border: 2px solid #769a97;
 }
