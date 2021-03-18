@@ -58,7 +58,7 @@ const Classes = () => {
                   easing: 'cubic-bezier(.03,.98,.52,.99)',
                 }}
               >
-                <img src="./images/Kids.jpg" className="class-img"></img>
+                <img src="./images/Kids.jpg" className="class-img" alt=""></img>
               </Tilt>
             </Col>
           </Row>
@@ -99,7 +99,7 @@ const Classes = () => {
                   easing: 'cubic-bezier(.03,.98,.52,.99)',
                 }}
               >
-                <img src="./images/girl.jpg" className="class-img"></img>
+                <img src="./images/girl.jpg" className="class-img" alt=""></img>
               </Tilt>
             </Col>
           </Row>
@@ -140,7 +140,7 @@ const Classes = () => {
                   easing: 'cubic-bezier(.03,.98,.52,.99)',
                 }}
               >
-                <img src="./images/Adult.jpg" className="class-img"></img>
+                <img src="./images/Adult.jpg" className="class-img" alt=""></img>
               </Tilt>
             </Col>
           </Row>

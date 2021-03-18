@@ -3,19 +3,17 @@
     height: 100%;
 }
 
-.hr {
-    background-color: rgb(128, 128, 128);
-}
-
 .class-headers {
     font-family: 'Philosopher', sans-serif;
     font-weight: 800;
     padding: 0;
-    color: whitesmoke;
+    font-size: 1.6em;
+    color: #fff;
 }
 
 p {
-    color: rgb(177, 177, 177);
+    color: rgb(196, 196, 196);
+    font-size: 1.2em;
 }
 
 .class-title {

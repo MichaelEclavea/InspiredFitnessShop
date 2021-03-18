@@ -66,6 +66,10 @@ h2 {
   color: #fff;
 }
 
+.hr {
+  background-color: rgb(128, 128, 128);
+}
+
 /* .carousel img {
   height: 300px;
   padding: 30px;
@@ -97,4 +101,8 @@ h2 {
 
 #search-btn {
   border: 2px solid #769a97;
+}
+
+.form-label {
+  color: white;
 }

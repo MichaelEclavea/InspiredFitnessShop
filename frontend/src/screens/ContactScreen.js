@@ -1,47 +1,71 @@
-import React, {useEffect, useState} from 'react'
-import {Link} from 'react-router-dom'
-import {Form, Button, Col} from 'react-bootstrap'
+import React from 'react'
+// import {Link} from 'react-router-dom'
+import { Col, Row } from 'react-bootstrap'
 // import FormContainer from '../components/FormContainer.js'
-import {useSelector} from 'react-redux'
 
-const ContactScreen = ({history}) => {
-  const [messageContent, setMessageContent] = useState({value: ''})
-  const [userName, setUserName] = useState({value: ''});
-  const [userEmail, setUserEmail] = useState({value: ''});
-  const userLogin = useSelector((state) => state.userLogin)
-  const { userInfo } = userLogin
 
-  useEffect(() => {
-    if(userInfo) {
-      setUserName({value: userInfo.name})
-      setUserEmail({value: userInfo.email})
-    }
-  }, [history, userInfo])
+const ContactScreen = () => {
+  // const [messageContent, setMessageContent] = useState({value: ''})
+  // const [userName, setUserName] = useState({value: ''});
+  // const [userEmail, setUserEmail] = useState({value: ''});
+  // const userLogin = useSelector((state) => state.userLogin)
+  // const { userInfo } = userLogin
 
-  const submitHandler = (e) => {
-    e.preventDefault()
-    if (userName.value && userEmail.value && messageContent.value) {
-      console.log('NAME', userName.value)
-      console.log('EMAIL', userEmail.value)
-      console.log('MESSAGE', messageContent.value)
-      alert('Message sent successfully')
-      history.push('/')
-    }
-  }
+  // useEffect(() => {
+  //   if(userInfo) {
+  //     setUserName({value: userInfo.name})
+  //     setUserEmail({value: userInfo.email})
+  //   }
+  // }, [history, userInfo])
 
-  const saveMessage = (e) => {
-    setMessageContent({value: e.target.value})
-  }
-  const nameHandler = (e) => {
-    setUserName({value: e.target.value})
-  }
-  const emailHandler = (e) => {
-    setUserEmail({value: e.target.value})
-  }
+  // const submitHandler = (e) => {
+  //   e.preventDefault()
+  //   if (userName.value && userEmail.value && messageContent.value) {
+  //     console.log('NAME', userName.value)
+  //     console.log('EMAIL', userEmail.value)
+  //     console.log('MESSAGE', messageContent.value)
+  //     alert('Message sent successfully')
+  //     history.push('/')
+  //   }
+  // }
+
+  // const saveMessage = (e) => {
+  //   setMessageContent({value: e.target.value})
+  // }
+  // const nameHandler = (e) => {
+  //   setUserName({value: e.target.value})
+  // }
+  // const emailHandler = (e) => {
+  //   setUserEmail({value: e.target.value})
+  // }
 
   return (
-    <div style={{ width: '600px', margin: 'auto'}}>
-      <Link className="btn btn-light my-3" to="/">
+    <div style={{ margin: 'auto', width: '50%', minHeight: '80vh', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+    <div>
+       <Row>
+      <Col>
+        <h3>Hours:</h3>
+        <p>(Mon - Fri) 6pm - 10pm</p>
+        <p>(Sat - Sun) 3pm - 9pm</p>
+      </Col>
+    </Row>
+    </div>
+    <hr className='hr'></hr>
+   <Row>
+      <Col>
+        <h3>Adress:</h3>
+        <p>302 South Route 4 #100, Hagåtña, 96910, Guam</p>
+      </Col>
+    </Row>
+    <hr className='hr'></hr>
+    <Row>
+      <Col>
+        <h3>Contact Info:</h3>
+        <p>Phone: 1-671-477-6564</p>
+        <p>Email: inspiredFitness671@gmail.com</p>
+      </Col>
+    </Row>
+      {/* <Link className="btn btn-light my-3" to="/">
         Go Back
       </Link>
 
@@ -66,23 +90,23 @@ const ContactScreen = ({history}) => {
           <Button type="submit" variant="primary" style={styles.btn}>
             Send
           </Button>
-        </Form>
+        </Form> */}
     </div>
   )
 }
 
-const styles = {
-  textArea: {
-    width: '100%',
-    height: '30vh',
-    padding: '15px',
-  },
-  btn: {
-    borderRadius: '5px',
-    marginTop: '10px',
-    marginLeft: '50%',
-    transform: 'translate(-50%, -50%)',
-  },
-}
+// const styles = {
+//   textArea: {
+//     width: '100%',
+//     height: '30vh',
+//     padding: '15px',
+//   },
+//   btn: {
+//     borderRadius: '5px',
+//     marginTop: '10px',
+//     marginLeft: '50%',
+//     transform: 'translate(-50%, -50%)',
+//   },
+// }
 
 export default ContactScreen
