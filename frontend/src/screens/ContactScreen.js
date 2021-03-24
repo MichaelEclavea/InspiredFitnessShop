@@ -9,13 +9,13 @@ const ContactScreen = () => {
   return (
     <div id='contact-container'>
       <section id='contact-title'>
-        <h1 style={{fontWeight: 'bold'}}>GET IN TOUCH!</h1>
+        <h1 style={{fontWeight: 'bold'}}>CONTACT US!</h1>
       </section>
       <div id='contact-two'>
         <div id='contact-text'>
 
           <h5>
-            <strong>Softwear Inc.</strong>
+            <strong>Inspired Fitness & Training Facility.</strong>
           </h5>
           <h5>
             <strong>Mail Address:</strong>

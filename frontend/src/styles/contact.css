@@ -40,6 +40,15 @@
     opacity: 0.8;
 }
 
+#contact-map {
+    transition: all 0.5s ease-in-out;
+}
+
+#contact-map:hover {
+    transform: translateY(-10px);
+    box-shadow:  5px 6px 15px rgba(0, 0, 0, 0.755), 0 6px 12px rgba(0, 0, 0, 0.708);
+}
+
 @media screen and (max-width: 750px) {
     #contact-two {
         display: flex;
